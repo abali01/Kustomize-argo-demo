@@ -47,8 +47,6 @@ patchesJson6902:
       path: /spec/template/spec/containers/0/envFrom
       value:
         - configMapRef: { name: github-actions-dev }
-    - op: remove
-      path: /spec/template/spec/containers/0/livenessProbe
 
 
 ######### service ######### 
