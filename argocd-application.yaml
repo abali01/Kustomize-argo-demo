@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: demo
-  namespace: argocd
+  name: github-actions-dev
+  namespace: openshift-gitops
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    name: 'github-actions-dev'
+    name: ''
     namespace: 'kustomize-deploy'
     server: 'https://kubernetes.default.svc'
   source:
