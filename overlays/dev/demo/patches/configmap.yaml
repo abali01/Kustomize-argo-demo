@@ -3,6 +3,7 @@ kind: ConfigMap
 metadata:
   name: service
 data:
+  HELLO: World
   DEBUG: "true"
   APP_NAME: "github-actions-dev"
   SERVICE_PORT: "8080"
