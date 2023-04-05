@@ -12,7 +12,7 @@ commonLabels:
   app: demo
 
 resources:
-  - ../../../../base/base-node
+  - ../../../base/base-node
 
 patchesStrategicMerge:
   - ./patches/configmap.yaml
