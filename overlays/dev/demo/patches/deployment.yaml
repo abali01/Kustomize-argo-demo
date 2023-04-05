@@ -21,11 +21,3 @@ spec:
               path: /github-actions/system/healthz
               port: 8080
               scheme: HTTP
-          livenessProbe:
-            exec:
-              command:
-                - ./bin/githubactions
-                - live
-          volumeMounts:
-            - mountPath: /tmp
-              name: liveness-probe
